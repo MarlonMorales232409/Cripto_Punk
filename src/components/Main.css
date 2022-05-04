@@ -1,0 +1,144 @@
+.main {
+    max-height: 100vh;
+
+}
+
+.mainContent {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.punkHighlight {
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.punkContainer {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-right: 20px;
+    margin: 15px;
+}
+
+.selectedPunk {
+    object-fit: contain;
+    max-width: min(30vw, 40vh);
+    max-height: 30vw;
+}
+
+.punkDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    flex: 0.75;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 96px;
+}
+
+.itemNumber{
+    color: #a1a5b0;
+    font-size: 72px;
+}
+
+.owner {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    height:50px;
+    justify-content:space-between;
+}
+
+.owner div {
+    margin: 0 5px;
+}
+
+.ownerImageContainer {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: contain;
+    
+}
+
+.ownerImageContainer > img {
+  width: 100%;
+  height: 100%;
+}
+
+.ownerNameAndHandle {
+    flex: 1;
+}
+
+.ownerHandle {
+    color: #00ebfe;
+}
+
+.ownerDetails{
+    display: flex;
+    align-items: center;
+}
+
+
+.ownerLink {
+    padding: 12px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: solid 1px #fff;
+    margin: 0 0 0 10px;
+}
+
+.ownerLink > img { 
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 996px){
+    .mainContent {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    .owner {
+        flex-direction: column;
+        row-gap:12px ;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .itemNumber {
+        font-size:  40px;
+    }
+
+    .ownerLink {
+        width:  30px;
+        height: 30px;
+    }
+
+    .owner div {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 996px){
+     .title {
+        font-size: 61px;
+    }
+
+    .itemNumber {
+        font-size:  35px;
+    }
+}
